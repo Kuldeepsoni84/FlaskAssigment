@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask Session Example</title>
+</head>
+<body>
+    {% if username %}
+        <p>Hello, {{ username }}! <a href="{{ url_for('logout') }}">Logout</a></p>
+    {% else %}
+        <p>Welcome to the Flask Session Example</p>
+    {% endif %}
+</body>
+</html>
